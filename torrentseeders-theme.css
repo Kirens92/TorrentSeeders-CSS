@@ -1,103 +1,88 @@
-/* ========================================
-   TORRENTSEEDERS MODERN THEME v2.0 FINAL
-   Ciemny + Złoty + Czerwony + Pomarańczowy
-========================================= */
-:root {
-  --ts-bg: #050509;
-  --ts-bg-alt: #101018;
-  --ts-surface: #151521;
-  --ts-gold: #f5c451;
-  --ts-gold-soft: #cda447;
-  --ts-red: #e43c3c;
-  --ts-orange: #ff8a3c;
-  --ts-text: #f5f5f7;
-  --ts-text-muted: #9a9ab0;
-  --ts-border: #26263a;
-  --ts-radius: 12px;
-  --ts-shadow: 0 20px 60px rgba(0,0,0,0.6);
+/* v3.0 MEGA SPEC - PRZEBIJE WSZYSTKO */
+body * { color: #f5f5f7 !important; }
+
+body body {
+  background: #050509 !important;
 }
 
-body {
-  background: radial-gradient(circle at top, #131321 0%, var(--ts-bg) 55%) !important;
-  color: var(--ts-text) !important;
-  font-family: system-ui, -apple-system, sans-serif !important;
+body .headerbar,
+body .navbar,
+body nav {
+  background: linear-gradient(135deg, #151521, #050509) !important !important;
+  border-bottom: 2px solid #f5c451 !important;
+  box-shadow: 0 25px 75px rgba(0,0,0,0.8) !important;
 }
 
-/* NAVBAR */
-.navbar, .headerbar, .page__header__bar {
-  background: linear-gradient(90deg, var(--ts-bg), var(--ts-surface)) !important;
-  border-bottom: 1px solid var(--ts-border) !important;
-  box-shadow: var(--ts-shadow) !important;
+body .navbar-brand {
+  color: #f5c451 !important;
+  font-weight: 800 !important;
+  text-shadow: 0 0 20px rgba(245, 196, 81, 0.5) !important;
 }
 
-.navbar-brand {
-  color: var(--ts-gold) !important;
+body a.nav-link,
+body .nav__list a {
+  color: #9a9ab0 !important;
+  background: transparent !important;
+  border-radius: 25px !important;
+  padding: 12px 20px !important;
+  margin: 4px !important;
+}
+
+body a.nav-link:hover,
+body .nav-link.active {
+  background: rgba(245, 196, 81, 0.2) !important;
+  color: #f5c451 !important;
+  box-shadow: 0 8px 25px rgba(245, 196, 81, 0.3) !important;
+}
+
+body .btn-primary,
+body .btn-warning,
+body button.btn {
+  background: linear-gradient(135deg, #ff8a3c, #e43c3c) !important;
+  border-radius: 25px !important;
+  box-shadow: 0 15px 40px rgba(255, 138, 60, 0.5) !important;
+  color: #fff !important;
   font-weight: 700 !important;
   text-transform: uppercase !important;
-}
-
-/* NAV LINKS */
-.nav-link, .nav__list a, .sidebar-menu a {
-  color: var(--ts-text-muted) !important;
-  border-radius: 999px !important;
-  padding: 0.75rem 1.25rem !important;
-  transition: all 0.3s ease !important;
-}
-
-.nav-link:hover, .nav-link.active, .nav__list a:hover {
-  background: rgba(245, 196, 81, 0.15) !important;
-  color: var(--ts-gold) !important;
-}
-
-/* CARDS & BOXES */
-.card, .box, .panel {
-  background: var(--ts-surface) !important;
-  border: 1px solid var(--ts-border) !important;
-  border-radius: var(--ts-radius) !important;
-  box-shadow: var(--ts-shadow) !important;
-}
-
-/* BUTTONS */
-.btn-primary, .btn-warning {
-  background: linear-gradient(135deg, var(--ts-orange), var(--ts-red)) !important;
-  border: none !important;
-  border-radius: 999px !important;
-  box-shadow: 0 12px 30px rgba(228, 60, 60, 0.4) !important;
-  font-weight: 600 !important;
-  text-transform: uppercase !important;
-}
-
-.btn-primary:hover {
-  background: linear-gradient(135deg, var(--ts-gold), var(--ts-orange)) !important;
-  box-shadow: 0 16px 40px rgba(245, 196, 81, 0.4) !important;
-  transform: translateY(-2px) !important;
-}
-
-/* TABLE */
-.table th {
-  background: rgba(21, 21, 33, 0.9) !important;
-  color: var(--ts-gold) !important;
   border: none !important;
 }
 
-.table-hover tbody tr:hover {
-  background: rgba(245, 196, 81, 0.08) !important;
+body .btn-primary:hover {
+  background: linear-gradient(135deg, #f5c451, #ff8a3c) !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 20px 50px rgba(245, 196, 81, 0.6) !important;
 }
 
-/* FORMS */
-.form-control, .form-select {
-  background: var(--ts-bg-alt) !important;
-  border: 1px solid var(--ts-border) !important;
-  border-radius: var(--ts-radius) !important;
-  color: var(--ts-text) !important;
+body .card,
+body .box,
+body .panel {
+  background: #151521 !important;
+  border: 1px solid #26263a !important;
+  border-radius: 16px !important;
+  box-shadow: 0 25px 75px rgba(0,0,0,0.6) !important;
 }
 
-.form-control:focus {
-  border-color: var(--ts-gold) !important;
-  box-shadow: 0 0 0 3px rgba(245, 196, 81, 0.25) !important;
+body .table th {
+  background: #2a2a3a !important;
+  color: #f5c451 !important;
+  border-top: none !important;
+  font-weight: 700 !important;
 }
 
-/* BADGES */
-.badge-warning { background: var(--ts-gold) !important; }
-.badge-danger { background: var(--ts-red) !important; }
-.badge-success { background: var(--ts-orange) !important; }
+body .table-hover tr:hover td {
+  background: rgba(245, 196, 81, 0.1) !important;
+}
+
+body .form-control,
+body input,
+body select,
+body textarea {
+  background: #101014 !important;
+  border: 1px solid #3a3a4a !important;
+  border-radius: 12px !important;
+  color: #f5f5f7 !important;
+}
+
+body .badge-warning { background: #f5c451 !important; color: #000 !important; }
+body .badge-danger { background: #e43c3c !important; }
+body .badge-success { background: #ff8a3c !important; }
