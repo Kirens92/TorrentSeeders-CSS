@@ -1,97 +1,23 @@
-/* v4.0 AGRESJA TOTALNA - ZMIENIA WSZYSTKO */
-*, *::before, *::after, 
-html *, html body *, html body * *, 
-body *|*, body table *|*, table *|* {
-  background-color: #050509 !important;
-  background-image: none !important;
-  color: #f5f5f7 !important;
-  border-color: #2a2a3a !important;
-  box-shadow: none !important;
-}
-
-/* FORCE NAVBAR */
-body nav, body .navbar, body .headerbar, 
-html nav, .navbar-inner, .headerbar * {
-  background: linear-gradient(90deg, #000 0%, #151521 50%, #050509 100%) !important;
-  border-bottom: 3px solid #f5c451 !important !important;
-}
-
-/* TABELA SUPERMOC */
-body table.table, body .table, body .table-responsive table {
-  background: transparent !important;
-}
-body table.table thead th, body table th, body .table thead th {
-  background: #000000 !important;
-  color: #f5c451 !important !important;
-  border-bottom: 3px solid #f5c451 !important;
-}
-body table.table tbody tr td, body table tbody tr {
-  background: #0d0d15 !important;
-}
-body table.table tbody tr:nth-child(even) td {
-  background: #10101a !important;
-}
-body table.table tbody tr:hover td {
-  background: #f5c45115 !important;
-  color: #f5f5f7 !important;
-}
-
-/* PRZYCISKI ZŁOTO-POMARAŃCZ */
-body .btn, body button, body input[type=submit], 
-body .btn-primary, body .btn-success, body .btn-warning {
-  background: linear-gradient(45deg, #ff8a3c 0%, #f5c451 100%) !important;
-  border: 2px solid #f5c451 !important !important;
-  color: #000000 !important;
-  font-weight: 700 !important;
-  text-transform: uppercase !important;
-  letter-spacing: 1px !important;
-}
-body .btn:hover, body button:hover {
-  background: linear-gradient(45deg, #f5c451 0%, #ff8a3c 100%) !important;
-  box-shadow: 0 8px 30px #f5c45140 !important;
-  transform: scale(1.05) !important;
-}
-
-/* TEXTOWE POLA */
-body input, body textarea, body select, body .form-control {
-  background: #08080f !important !important;
-  border: 2px solid #3a3a50 !important;
-  color: #f5f5f7 !important;
-}
-body input:focus, body .form-control:focus {
-  background: #0f0f1a !important;
-  border-color: #f5c451 !important;
-  box-shadow: 0 0 15px #f5c45130 !important;
-}
-
-/* LINKI ZŁOTE */
-body a, body a *, body a:link, body a:visited {
-  color: #f5c451 !important;
-  text-decoration: none !important;
-}
-body a:hover, body a:active {
-  color: #ff8a3c !important;
-  text-shadow: 0 0 12px #f5c451 !important;
-}
-
-/* BADGE KOLOROWE */
-body .badge, body .label {
-  background: #f5c451 !important;
-  color: #000 !important;
-  font-weight: 800 !important;
-  text-shadow: none !important;
-}
-body .badge-danger { background: #e43c3c !important; color: #fff !important; }
-body .badge-success { background: #ff8a3c !important; color: #000 !important; }
-
-/* SIDEBAR CIEMNY */
-body .sidebar, body aside, body nav:not(.navbar) {
-  background: #030306 !important;
-  border-right: 3px solid #f5c451 !important;
-}
-
-/* UKRYJ STARE STYLE */
-body .container-fluid, body .row {
-  background: transparent !important;
-}
-body * { min-height: 0 !important; }
+/* v5.0 STANDALONE EXTERNAL - MAX PENETRACJA */
+body,html,*{background:#050509!important;color:#f5f5f7!important;font-family:system-ui!important}
+/* NAVBAR */
+body nav,body .navbar,body .headerbar{background:linear-gradient(135deg,#000 0%,#151521 70%,#050509 100%)!important;border-bottom:3px solid #f5c451!important;box-shadow:0 4px 20px rgba(245,196,81,.3)!important}
+/* TABELA */
+body table.table th,body table th{background:#000!important;color:#f5c451!important;border-bottom:3px solid #f5c451!important;font-weight:900!important}
+body table.table tbody tr td,body table tbody tr{background:#0a0a15!important;border-bottom:1px solid #2a2a40!important}
+body table.table tbody tr:hover{background:rgba(245,196,81,.18)!important}
+/* BUTTONS */
+body .btn,body button,body input[type=submit]{background:linear-gradient(135deg,#ff8a3c 0%,#f5c451 100%)!important;border:2px solid #f5c451!important;color:#000!important;font-weight:700!important}
+body .btn:hover{box-shadow:0 8px 30px rgba(245,196,81,.5)!important}
+/* INPUTS */
+body input,body textarea,body select,body .form-control{background:#0f0f1a!important;border:2px solid #3a3a50!important;color:#f5f5f7!important}
+body input:focus{border-color:#f5c451!important;box-shadow:0 0 15px rgba(245,196,81,.4)!important}
+/* LINKI */
+body a{color:#f5c451!important}
+body a:hover{color:#ff8a3c!important;text-shadow:0 0 12px #f5c451!important}
+/* BADGES */
+body .badge-warning,body .badge{background:#f5c451!important;color:#000!important}
+body .badge-danger{background:#e43c3c!important;color:#fff!important}
+body .badge-success{background:#ff8a3c!important;color:#000!important}
+/* SIDEBAR */
+body .sidebar{background:#050509!important;border-right:3px solid #f5c451!important}
