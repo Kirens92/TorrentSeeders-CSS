@@ -1,177 +1,91 @@
-/* ========================================
-   TORRENTSEEDERS MODERN THEME v2.0 FINAL
-   Ciemny + Złoty + Czerwony + Pomarańczowy
-   Standalone CSS dla UNIT3D Profile
-=========================================== */
-
-/* 1. GŁÓWNE ZMIENNE / ROOT */
-:root {
-  --ts-bg: #050509;
-  --ts-bg-alt: #101018;
-  --ts-surface: #151521;
-  --ts-gold: #f5c451;
-  --ts-red: #e43c3c;
-  --ts-orange: #ff8a3c;
-  --ts-text: #f5f5f7;
-  --ts-border: #26263a;
-  --ts-shadow: rgba(245, 196, 81, 0.15);
-}
-
-/* 2. RESET + GLOBAL */
-* {
-  box-sizing: border-box;
-}
-
-body, html, body * {
-  background: var(--ts-bg) !important;
-  color: var(--ts-text) !important;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
-  transition: all 0.3s ease !important;
-}
-
-/* 3. NAVBAR + HEADER */
-.navbar, .headerbar, .nav, nav.navbar {
-  background: linear-gradient(135deg, var(--ts-surface), var(--ts-bg-alt)) !important;
-  border-bottom: 1px solid var(--ts-border) !important;
-  box-shadow: 0 4px 20px var(--ts-shadow) !important;
-}
-
-.navbar-brand, .nav-link {
-  color: var(--ts-gold) !important;
-}
-
-.nav-link:hover {
-  color: var(--ts-orange) !important;
-  text-shadow: 0 0 10px var(--ts-gold) !important;
-}
-
-/* 4. PRZYCISKI + ALERTS */
-.btn-primary { background: var(--ts-orange) !important; border: none !important; }
-.btn-success { background: var(--ts-gold) !important; border: none !important; }
-.btn-danger { background: var(--ts-red) !important; border: none !important; }
-.btn:hover { transform: translateY(-2px) !important; box-shadow: 0 8px 25px var(--ts-shadow) !important; }
-
-.alert-success { background: rgba(245, 196, 81, 0.15) !important; border: 1px solid var(--ts-gold) !important; }
-.alert-danger { background: rgba(228, 60, 60, 0.15) !important; border: 1px solid var(--ts-red) !important; }
-
-/* 5. Tabele Torrentów + Cards */
-.table, .table-responsive {
-  background: var(--ts-surface) !important;
-  border-radius: 12px !important;
-  overflow: hidden !important;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.5) !important;
-}
-
-.table th {
-  background: var(--ts-bg-alt) !important;
-  border-bottom: 2px solid var(--ts-gold) !important;
-  color: var(--ts-gold) !important;
-}
-
-.table tbody tr {
-  border-bottom: 1px solid var(--ts-border) !important;
-  transition: all 0.3s ease !important;
-}
-
-.table tbody tr:hover {
-  background: rgba(245, 196, 81, 0.08) !important;
-  transform: scale(1.01) !important;
-}
-
-/* 6. BADGES */
-.badge-warning { background: var(--ts-gold) !important; color: #000 !important; }
-.badge-danger { background: var(--ts-red) !important; }
-.badge-success { background: var(--ts-orange) !important; }
-.badge-info { background: var(--ts-surface) !important; border: 1px solid var(--ts-gold) !important; }
-
-/* 7. FORMY + INPUTS */
-.form-control, input, textarea, select {
-  background: var(--ts-bg-alt) !important;
-  border: 1px solid var(--ts-border) !important;
-  color: var(--ts-text) !important;
-  border-radius: 8px !important;
-}
-
-.form-control:focus {
-  border-color: var(--ts-gold) !important;
-  box-shadow: 0 0 0 3px rgba(245, 196, 81, 0.25) !important;
-}
-
-/* 8. Profile + User Cards */
-.page__container, .profile-page, .user-card {
-  background: var(--ts-surface) !important;
-  border-radius: 16px !important;
-  padding: 24px !important;
-  box-shadow: 0 12px 40px rgba(0,0,0,0.6) !important;
-  border: 1px solid var(--ts-border) !important;
-}
-
-/* 9. RESPONSYWNOŚĆ MOBILE */
-@media (max-width: 768px) {
-  .container { padding: 0 12px !important; }
-  .table { font-size: 14px !important; }
-  .btn { padding: 12px 20px !important; font-size: 16px !important; }
-}
-
-/* 10. SIDEBAR + FOOTER */
-.sidebar, .footer {
-  background: var(--ts-bg-alt) !important;
-  border: 1px solid var(--ts-border) !important;
-}
-
-/* 11. RATIO BAR + Progress */
-.progress, .ratio-bar {
-  background: var(--ts-border) !important;
-  height: 8px !important;
-  border-radius: 4px !important;
-}
-
-.progress-bar {
-  background: linear-gradient(90deg, var(--ts-gold), var(--ts-orange)) !important;
-}
-
-/* 12. HOVER EFEKTY DLA WSZYSTKICH LINKÓW */
-a, a:hover, a:focus {
-  color: var(--ts-gold) !important;
-  text-decoration: none !important;
-}
-
-a:hover {
-  text-shadow: 0 0 8px var(--ts-gold) !important;
-}
-
-/* v2.3 FINE-TUNING - DLA TWOJEGO SCREENA */
-html body .page__title {
-  color: #f5c451 !important;
-  text-shadow: 0 2px 8px rgba(245,196,81,0.3) !important;
-}
-
-html body .table-responsive {
-  background: rgba(21,21,33,0.9) !important;
-  border-radius: 12px !important;
-  padding: 16px !important;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.7) !important;
-}
-
-html body .btn-group .btn {
-  background: linear-gradient(135deg, #ff8a3c, #f5c451) !important;
-  border: none !important;
-}
-
-html body .badge {
-  font-weight: 700 !important;
+/*! TORRENTSEEDERS v3.0 NUCLEAR - PRZEBIJA WSZYSTKO */
+html body *|*, html body *|* *|*, html body table *|*, 
+body > *|*, body table *|* {
+  background: #050509 !important;
+  color: #f5f5f7 !important !important;
   text-shadow: none !important;
 }
 
-/* SIDEBAR */
-html body .sidebar {
-  background: #0f0f1a !important;
-  border-right: 1px solid #2a2a3a !important;
+/* NAVBAR ZŁOTY */
+html body nav.navbar, html body .navbar, html body .headerbar,
+html body nav *|*, html body .navbar *|* {
+  background: linear-gradient(135deg, #050509 0%, #151521 100%) !important;
+  border-bottom: 2px solid #f5c451 !important;
 }
 
-/* HOVER WSZYSTKO */
-html body *:hover {
-  transform: translateY(-1px) !important;
-  box-shadow: 0 4px 16px rgba(245,196,81,0.15) !important;
+/* TABELA TORRENTÓW */
+html body table.table, html body .table-responsive {
+  background: #101018 !important;
+  border-radius: 0 !important;
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.8) !important;
 }
 
+html body table.table thead th, html body table th {
+  background: #000 !important;
+  color: #f5c451 !important;
+  border-bottom: 2px solid #f5c451 !important;
+  font-weight: bold !important;
+}
+
+html body table.table tbody tr {
+  background: #0a0a10 !important;
+  border-bottom: 1px solid #2a2a40 !important;
+}
+
+html body table.table tbody tr:hover td {
+  background: linear-gradient(90deg, rgba(245,196,81,0.15), rgba(255,138,60,0.1)) !important;
+}
+
+/* BUTTONS */
+html body .btn, html body button, html body input[type="submit"] {
+  background: linear-gradient(135deg, #ff8a3c, #f5c451) !important;
+  border: 2px solid #f5c451 !important;
+  color: #000 !important;
+  font-weight: 600 !important;
+  text-shadow: none !important;
+}
+
+html body .btn:hover, html body button:hover {
+  background: linear-gradient(135deg, #f5c451, #ff8a3c) !important;
+  transform: scale(1.05) !important;
+  box-shadow: 0 6px 25px rgba(245,196,81,0.4) !important;
+}
+
+/* INPUTS + FORMY */
+html body input[type="text"], html body input[type="password"], 
+html body textarea, html body .form-control, html body select {
+  background: #0a0a15 !important;
+  border: 2px solid #2a2a40 !important;
+  color: #f5f5f7 !important;
+  border-radius: 6px !important;
+}
+
+html body input:focus, html body .form-control:focus {
+  border-color: #f5c451 !important;
+  box-shadow: 0 0 0 4px rgba(245,196,81,0.2) !important;
+}
+
+/* LINKI + BADGES */
+html body a, html body a * {
+  color: #f5c451 !important;
+}
+
+html body a:hover {
+  color: #ff8a3c !important;
+  text-shadow: 0 0 10px rgba(245,196,81,0.6) !important;
+}
+
+html body .badge-warning { background: #f5c451 !important; color: #000 !important; }
+html body .badge-danger { background: #e43c3c !important; }
+html body .badge-success { background: #ff8a3c !important; }
+
+/* SIDEBAR + CONTAINER */
+html body .sidebar, html body aside {
+  background: #080815 !important;
+  border-right: 2px solid #f5c451 !important;
+}
+
+html body .container, html body .page__container {
+  background: transparent !important;
+  max-width: 1400px !important;
+}
