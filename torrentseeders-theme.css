@@ -140,4 +140,38 @@ a:hover {
   text-shadow: 0 0 8px var(--ts-gold) !important;
 }
 
-/* KONIEC - TO JEST PEŁNY, DZIAŁAJĄCY MOTYW */
+/* v2.3 FINE-TUNING - DLA TWOJEGO SCREENA */
+html body .page__title {
+  color: #f5c451 !important;
+  text-shadow: 0 2px 8px rgba(245,196,81,0.3) !important;
+}
+
+html body .table-responsive {
+  background: rgba(21,21,33,0.9) !important;
+  border-radius: 12px !important;
+  padding: 16px !important;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.7) !important;
+}
+
+html body .btn-group .btn {
+  background: linear-gradient(135deg, #ff8a3c, #f5c451) !important;
+  border: none !important;
+}
+
+html body .badge {
+  font-weight: 700 !important;
+  text-shadow: none !important;
+}
+
+/* SIDEBAR */
+html body .sidebar {
+  background: #0f0f1a !important;
+  border-right: 1px solid #2a2a3a !important;
+}
+
+/* HOVER WSZYSTKO */
+html body *:hover {
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 16px rgba(245,196,81,0.15) !important;
+}
+
